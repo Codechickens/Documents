@@ -23,7 +23,7 @@ int main(){
   printf("Dien tich hinh tron la: %.2f\n", PI * r * r);
   printf("Chu vi hinh tron la: %.2f\n", 2 * PI * r);
 */
-
+/*
   // Khai báo các biến
     char title[100], isbn[20];
     float price, total, vat, finalPay;
@@ -67,7 +67,9 @@ int main(){
     // In phần tổng kết
     printf("VAT: %36.2f$\n", vat);
     printf("You pay: %32.2f$\n", finalPay);
+*/
 
+  
     return 0;
 }
 
