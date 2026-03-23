@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	// VD6.3
+/*	// VD6.3
 	int a=10;
 	//scanf("%d",&a);
 	if (a<10){
@@ -15,4 +15,6 @@ int main(){
 	} else if (a>20){
 		printf("so vua nhap lon hon 20\n");
 	}
+*/
+	
 }
