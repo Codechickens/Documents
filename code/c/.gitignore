@@ -1,0 +1,14 @@
+# Loại bỏ các file thực thi (không có đuôi) trên Linux
+*
+!*/
+!*.c
+!*.h
+!*.cpp
+!*.py
+!Makefile
+!.gitignore
+
+# Loại bỏ các file có đuôi cụ thể (nếu bạn đặt tên output có đuôi)
+*.out
+*.o
+*.exe
