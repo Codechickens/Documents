@@ -221,4 +221,20 @@ int main(){
         }
     }
 */
+
+	float diem;
+	scanf("%f",&diem);
+	if (diem<=0 && diem<=5){
+		printf("Hoc luc kem\n");
+	} else if (diem<=5 && diem <=7){
+		printf("Hoc luc trung binh\n");
+	} else if (diem<=7 && diem <=8){
+		printf("Hoc luc kha\n");
+	} else if (diem<=8 && diem<=9){
+		printf("Hoc luc gioi\n");
+	} else if (diem<=9 && diem<=10){
+		printf("Hoc luc xuat sac\n");
+	} else {
+		printf("Diem phai trong khoang (0-10)\n");
+	}
 }
