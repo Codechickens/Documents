@@ -15,3 +15,7 @@
 
 # Loại bỏ file desktop.ini 
 desktop.ini
+
+# Loại bỏ file .DS_Store
+.DS_Store
+**/.DS_Store
