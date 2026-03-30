@@ -8,13 +8,15 @@ int main(){
     // - Là bội của 3
     // - Cứ cách 10 số thì xuống dòng
     int count = 0;
-    for (int i=1; i<=1000; i++){
-        int hang_chuc = (i/10)%10;
-        int hang_don_vi = i%10;
-        int hang_tram = i/100;
-        if ((hang_don_vi + hang_tram == hang_chuc) && (i%3 == 0)){
-            printf("%d\t ", i);
+    for (int i=0; i<=1000; i++){
+        int b = (i/10)%10;
+        int c = i%10;
+        int a = i/100;
+        if ((c + a == b) && (i%3 == 0)){
+            printf("%d\t", i);
             count++;
+
+
             if (count % 10 == 0){
                 printf("\n");
             }
