@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
+
 int main(){
 /*	// VD6.3
 	int a=10;
@@ -222,6 +224,7 @@ int main(){
     }
 */
 
+/*	//BT 8
 	float diem;
 	scanf("%f",&diem);
 	if (diem<=0 && diem<=5){
@@ -237,4 +240,28 @@ int main(){
 	} else {
 		printf("Diem phai trong khoang (0-10)\n");
 	}
+*/
+
+    //BT 9
+    int n;
+    scanf("%d",n);
+    int tuoi = (2026 - n);
+    if (tuoi<0 && tuoi>100){
+        printf("Nhap sai\n");
+    } else if (tuoi>=0 && tuoi<=6){
+        printf("Tre em\n");
+    } else if (tuoi>=6 && tuoi<=11){
+        printf("HS cap 1\n");
+    } else if (tuoi>=11 && tuoi<=15){
+        printf("HS cap \n");
+    } else if (tuoi>=15 && tuoi<=18){
+        printf("HS cap 1\n");
+    } else if (tuoi>=18 && tuoi<=40){
+        printf("HS cap 1\n");
+    } else if (tuoi>=40 && tuoi<=60){
+        printf("HS cap 1\n");
+    } else if (tuoi>=){
+        printf("HS cap 1\n");
+    }
+	
 }

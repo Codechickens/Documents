@@ -4,15 +4,14 @@
 #include <stdlib.h>
 #define ENTER '\n'
 
-/*
+
 unsigned long long int GiaiThua(long long int n){
     if (n<=1){ 
         return 1;
     }
-
     return n*GiaiThua((n-1));
 }
-*/
+
 
 int main(){
 /*    double n;
@@ -45,6 +44,7 @@ int main(){
     printf("Your score is: %lf",n);
 */
 
+/*
     char c;
     while (c != -1)
     {
@@ -56,6 +56,39 @@ int main(){
         }
     }
     putchar(ENTER);
-    
+ */
+
+/*
+    double epsilon,n;
+    double temp=1.0;
+    double sum=1.0;
+    int i=1;
+    scanf("%lf %lf",&epsilon,&n);
+    while (temp>=epsilon){
+        temp/=GiaiThua(i);
+        sum+=temp;
+        i++;
+    }
+    printf("%lf\n",sum );
+*/
+
+    double ep,n;
+    double sum=0.0;
+    double temp=1.0;
+    int i=0;
+
+    scanf("%lf %lf",&ep ,&n);
+    while (temp>=ep){
+        temp/=(2*i+1);
+
+        if (i%2==0){
+            sum+=temp;
+        } else{
+            sum-=temp;
+        }
+        i++;
+    }
+    printf("%.10f\n",sum );
+    printf("%.10f\n",M_PI/4 );
     return 0;
 }
