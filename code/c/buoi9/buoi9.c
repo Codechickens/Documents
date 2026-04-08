@@ -62,7 +62,7 @@ int main(){
     while (c != -1)
     {
         c=getchar();
-        if (c==ENTER) break;
+        if (c==ENTER) break;   c=='\n
         else{
             if (c>='0' && c<='9') continue;
             else putchar(c);
