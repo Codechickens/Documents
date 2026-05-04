@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int addNum(int *Num, int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++, Num++) {
+        sum += *Num;
+    }
+    return sum;
+}
 
 int countEven(int *Num, int size) {
     int countEven = 0;
@@ -22,12 +29,16 @@ int main(){
         printf("Nhap phan tu thu %d: ", i + 1);
         scanf("%d", &a[i]);
     }
+
+    int Tong = addNum(a, n);
+    printf("Tong cac phan tu co trong mang la: %d\n", Tong);
+
     int So_chan = countEven(a, n);
     printf("So phan tu chan co trong mang la: %d\n", So_chan);
 
-    
+
     free(a);
 
-    
+
     return 0;
 }
