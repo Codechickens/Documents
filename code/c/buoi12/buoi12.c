@@ -112,12 +112,12 @@ int main(){
         scanf("%d", &arr[i]);
     }
     Mangtangdan(arr, n);
-    Manggiamdan(arr, n);
     printf("Mang sau khi sap xep tang dan: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");
+    Manggiamdan(arr, n);
     printf("Mang sau khi sap xep giam dan: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
