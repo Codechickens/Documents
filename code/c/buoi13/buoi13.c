@@ -19,12 +19,25 @@ int countEven(int *Num, int size) {
     return countEven;
 }
 
+int Maximum(int *a, int size){
+    int max = *a;
+    for (int i = 1; i < size; i++) {
+        if (*(a + i) > max) {
+            max = *(a + i);
+        }
+    }
+    return max;
+}
+
+
 int main(){
     int *a,n;
+
     printf("Nhap so phan tu co trong mang: ");
     scanf("%d", &n);
 
     a = malloc(n * sizeof(int));
+
     for (int i = 0; i < n; i++) {
         printf("Nhap phan tu thu %d: ", i + 1);
         scanf("%d", &a[i]);
@@ -38,6 +51,11 @@ int main(){
 
     int So_chan = countEven(a, n);
     printf("So phan tu chan co trong mang la: %d\n", So_chan);
+
+    printf("\n");
+
+    double ma = Maximum(a, n);
+    printf("Phan tu lon nhat trong mang la: %lf\n", ma);
 
 
     free(a);
