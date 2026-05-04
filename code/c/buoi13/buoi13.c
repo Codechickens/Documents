@@ -29,9 +29,12 @@ int main(){
         printf("Nhap phan tu thu %d: ", i + 1);
         scanf("%d", &a[i]);
     }
+    printf("\n");
 
     int Tong = addNum(a, n);
     printf("Tong cac phan tu co trong mang la: %d\n", Tong);
+
+    printf("\n");
 
     int So_chan = countEven(a, n);
     printf("So phan tu chan co trong mang la: %d\n", So_chan);
