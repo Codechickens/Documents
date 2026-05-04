@@ -54,8 +54,8 @@ int main(){
 
     printf("\n");
 
-    double ma = Maximum(a, n);
-    printf("Phan tu lon nhat trong mang la: %lf\n", ma);
+    int max = Maximum(a, n);
+    printf("Phan tu lon nhat trong mang la: %d\n", max);
 
 
     free(a);
