@@ -21,7 +21,7 @@ int countEven(int *Num, int size) {
 
 int Maximum(int *a, int size){
     int max = *a;
-    if (size == 0 || *a == NULL) {
+    if (size <= 0 || a == NULL) {
         return NULL;
     }
     for (int i = 1; i < size; i++) {
